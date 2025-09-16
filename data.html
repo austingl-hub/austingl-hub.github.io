@@ -19,19 +19,30 @@
     .tab-buttons button.active { background: #333; color: white; }
     .tab-content { display: none; margin-top: 20px; }
     .tab-content.active { display: block; }
-    .file-links { margin-top: 15px; }
-    .file-links a {
-      display: block;
-      margin: 8px 0;
-      color: #0077cc;
-      text-decoration: none;
+
+    /* ✅ Button styling for file links */
+    .file-links {
+      margin-top: 20px;
     }
-    .file-links a:hover { text-decoration: underline; }
+    .file-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #0077cc;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .file-links a:hover {
+      background-color: #005fa3;
+    }
   </style>
 </head>
 <body>
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html">Our Project</a>
     <a href="about.html">About</a>
     <a href="data.html">Data</a>
   </nav>
@@ -47,23 +58,21 @@
     <div id="our" class="tab-content active">
       <h2>Our Data</h2>
       <p>
-        [description of our data goes here]
+        [description of our data and possible notes on codebook]
       </p>
       <div class="file-links">
-        <a href="our-data.csv" download>📊 Download Our Data (CSV)</a>
-        <a href="codebook.pdf" download>📄 Download Codebook (PDF)</a>
+        <a href="our-data.csv" download>📊 Our Data (CSV)</a>
+        <a href="codebook.pdf" download>📄 Codebook (PDF)</a>
       </div>
     </div>
     
     <div id="other" class="tab-content">
       <h2>Other Data</h2>
       <p>
-       [description of the other data goes here]
+        [description of external data]
       </p>
       <div class="file-links">
-        <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">
-          🌐 Access External Data
-        </a>
+        <a href="https://example.com/external-dataset" target="_blank">🌐 Access External Data</a>
       </div>
     </div>
   </div>
