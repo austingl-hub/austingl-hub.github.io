@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    nav {
+      padding: 15px;
+      background: white;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      color: #333;
+    }
+    nav a:hover { color: #0077cc; }
+
+    /* Banner */
+    .banner {
+      position: relative;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .banner::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url("banner.jpg") center/cover no-repeat;
+      z-index: 0;
+    }
+    .banner::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,119,204,0.6); 
+      z-index: 1;
+    }
+    .banner h1 {
+      position: relative;
+      z-index: 2;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .content {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Our Project</a>
+    <a href="about.html">About</a>
+    <a href="data.html">Data</a>
+    <a href="elist.html">Join our List</a>
+  </nav>
+
+    <div class="banner">
+    <h1>Join our Email List for Updates</h1>
+  </div>
+
+  <div class="content">
+    <p>
+      You can join our email list by clicking the button below. Once routed to the form linked there, you'll be able to sign up for updates on our project, related work and events, and
+      more. You'll also be able to reach out with specific questions that you might have. We look forward to hearing from you!
+    </p>
+  </div>
+</body>
+</html>
